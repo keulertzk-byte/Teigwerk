@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 interface Product {
   id: number;
@@ -135,17 +134,9 @@ const products: Product[] = [
 
 const categories = ["Alle", "Brote & Klassiker", "Burger Buns", "Trendgebäcke", "Süßes & Besonderes"];
 
-function ProductsContent() {
+export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>("Alle");
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    const categoryParam = searchParams.get('category');
-    if (categoryParam && categories.includes(categoryParam)) {
-      setSelectedCategory(categoryParam);
-    }
-  }, [searchParams]);
 
   const filteredProducts = selectedCategory === "Alle" 
     ? products 
@@ -418,13 +409,5 @@ function ProductsContent() {
         </div>
       </footer>
     </div>
-  );
-}
-
-export default function Products() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <ProductsContent />
-    </Suspense>
   );
 }
