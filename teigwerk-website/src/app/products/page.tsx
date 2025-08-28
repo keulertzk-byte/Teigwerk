@@ -115,7 +115,7 @@ const products: Product[] = [
     name: "Fudgy Bananenbrot",
     description: "Saftiges Bananenbrot zum Naschen - ein süßer Klassiker, der sich vielseitig kombinieren lässt und Gäste begeistert.",
     price: "",
-    image: "/bananenbrot.png",
+    image: "/Bananenbrot.png",
     category: "Süßes & Besonderes",
     features: [],
     partnerImages: ["/bananenbrot.jpeg"]
