@@ -32,48 +32,77 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section aria-label="Hero" className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section
+        aria-label="Hero"
+        className="
+          relative
+          overflow-visible
+          pt-24 pb-20
+          h-[90vh] flex items-center justify-center
+        "
+      >
+        {/* Background slideshow */}
+        <div aria-hidden className="absolute inset-0 -z-10">
           <HeroSlideshow />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        <div className="relative z-10 text-center text-white max-w-4xl px-6">
-          <div className="mb-8">
-            <Image
-              src="/Teigwerk Logo Weiss.png"
-              alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
-              width={900}
-              height={900}
-              className="mx-auto mb-6"
-            />
-          </div>
-          <h1 className="font-headline text-5xl md:text-7xl mb-8">
-            Weil{" "}
-            <span style={{ color: "#BA8D60" }}>gutes Brot</span>
-            <br />
-            den Unterschied macht
-          </h1>
-          <h2 className="font-body text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Handwerkliche Backwaren für Gastronomie & Großhandel in Köln, Düsseldorf, Bonn und NRW
-          </h2>
-          <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Das Teigwerk liefert frische Brote, Burger Buns und Spezialitäten aus Köln an Cafés, Restaurants, Hotels & Caterer – zuverlässig, termintreu und in gleichbleibender Qualität.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/products"
-              className="font-cta bg-secondary hover:bg-primary text-white px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
-              aria-label="Entdecken Sie unser komplettes Sortiment"
+
+        <div className="container mx-auto px-4">
+          <div className="text-center text-white max-w-4xl mx-auto">
+            <div className="mb-8">
+              <Image
+                src="/Teigwerk Logo Weiss.png"
+                alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
+                width={900}
+                height={900}
+                className="mx-auto mb-6"
+              />
+            </div>
+
+            <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+              Weil{" "}
+              <span style={{ color: "#BA8D60" }}>gutes Brot</span>
+              <br />
+              den Unterschied macht
+            </h1>
+
+            <p className="font-body text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Handwerkliche Backwaren aus Köln – Lieferung nach Köln, Düsseldorf, Bonn & NRW.
+            </p>
+
+            <div
+              className="
+                mt-6 flex flex-wrap items-center justify-center gap-3
+                relative z-10
+              "
             >
-              Sortiment entdecken
-            </Link>
-            <Link
-              href="#contact"
-              className="font-cta border border-white/80 hover:bg-white hover:text-foreground text-white px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
-              aria-label="Kontaktieren Sie uns für eine Beratung"
-            >
-              Kontakt
-            </Link>
+              <Link
+                href="/products"
+                className="
+                  inline-flex items-center justify-center
+                  rounded-md px-5 py-3 text-base font-medium
+                  bg-secondary hover:bg-primary text-white
+                  border border-white/20
+                  shadow-sm transition-colors
+                "
+                aria-label="Entdecken Sie unser komplettes Sortiment"
+              >
+                Sortiment entdecken
+              </Link>
+
+              <Link
+                href="#contact"
+                className="
+                  inline-flex items-center justify-center
+                  rounded-md px-5 py-3 text-base font-medium
+                  border border-white/80 hover:bg-white hover:text-foreground text-white
+                  shadow-sm transition-colors
+                "
+                aria-label="Kontaktieren Sie uns für eine Beratung"
+              >
+                Kontakt
+              </Link>
+            </div>
           </div>
         </div>
       </section>
