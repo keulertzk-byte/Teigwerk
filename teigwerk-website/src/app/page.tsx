@@ -1,6 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSlideshow from "./components/HeroSlideshow";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Das Teigwerk - Handwerkliche Backwaren aus Köln',
+  description: 'Das Teigwerk liefert handwerkliche Backwaren an Gastronomie, Cafés & Großhandel in Köln, Düsseldorf, Bonn & NRW. Frische Brote, Burger Buns & Spezialitäten.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Das Teigwerk - Handwerkliche Backwaren aus Köln',
+    description: 'Das Teigwerk liefert handwerkliche Backwaren an Gastronomie, Cafés & Großhandel in Köln, Düsseldorf, Bonn & NRW.',
+    url: 'https://www.das-teigwerk.de',
+  },
+};
 
 export default function Home() {
   return (
@@ -134,7 +148,7 @@ export default function Home() {
               <strong>Homemade. Honest. From Cologne.</strong>
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 category-container">
             {/* Brote & Klassiker */}
             <article className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
@@ -230,11 +244,11 @@ export default function Home() {
               Wir beliefern Cafés & Restaurants in Köln, Düsseldorf, Bonn & Umgebung. Qualität, Termintreue & lokaler Service – darauf können Sie sich verlassen.
             </p>
           </div>
-          
+
           <div className="max-w-6xl mx-auto mb-20">
             <div className="overflow-x-auto scrollbar-hide">
               <div className="flex space-x-6 pb-4" style={{width: 'max-content'}}>
-                
+
                 {/* Existing logos */}
                 <div className="flex-shrink-0 w-60 flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors duration-300">
                   <Image
@@ -312,11 +326,11 @@ export default function Home() {
               Eindrücke aus den Küchen unserer Partner
             </h2>
           </div>
-          
+
           <div className="max-w-7xl mx-auto">
             <div className="overflow-x-auto scrollbar-hide">
               <div className="flex space-x-4 pb-6" style={{width: 'max-content'}}>
-                
+
                 {/* Gallery Item 1 - Small */}
                 <div className="flex-shrink-0 relative h-80 w-60 rounded-2xl overflow-hidden">
                   <Image
