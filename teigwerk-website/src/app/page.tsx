@@ -36,22 +36,17 @@ export default function Home() {
         aria-label="Hero"
         className="
           relative
-          overflow-hidden
           pt-24 pb-20
-          h-[90vh] flex items-center justify-center
+          bg-[#D1BA9C]/60
+          flex items-center justify-center
         "
       >
-        {/* Background slideshow */}
-        <div aria-hidden className="absolute inset-0 z-0">
-          <HeroSlideshow />
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
-        </div>
 
-        <div className="container mx-auto px-6 relative z-20">
-          <div className="text-center text-white max-w-4xl mx-auto">
+        <div className="container mx-auto px-6">
+          <div className="text-center text-black max-w-4xl mx-auto">
             <div className="mb-8">
               <Image
-                src="/Teigwerk Logo Weiss.png"
+                src="/Logo.svg"
                 alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
                 width={900}
                 height={900}
@@ -66,14 +61,6 @@ export default function Home() {
               den Unterschied macht
             </h1>
 
-            <h2 className="font-body text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Handwerkliche Backwaren für Gastronomie & Großhandel in Köln, Düsseldorf, Bonn und NRW
-            </h2>
-
-            <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-              Das Teigwerk liefert frische Brote, Burger Buns und Spezialitäten aus Köln an Cafés, Restaurants, Hotels & Caterer – zuverlässig, termintreu und in gleichbleibender Qualität.
-            </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/products"
@@ -84,7 +71,7 @@ export default function Home() {
               </Link>
               <Link
                 href="#contact"
-                className="font-cta border border-white/80 hover:bg-white hover:text-foreground text-white px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
+                className="font-cta border border-black/30 hover:bg-primary hover:text-white text-black px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
                 aria-label="Kontaktieren Sie uns für eine Beratung"
               >
                 Kontakt
@@ -113,6 +100,12 @@ export default function Home() {
               <h2 className="font-headline text-3xl md:text-4xl text-black leading-tight mb-6">
                 Tradition trifft auf moderne Gastronomie
               </h2>
+              <h3 className="font-body text-xl md:text-2xl text-black mb-6">
+                Handwerkliche Backwaren für Gastronomie & Großhandel in Köln, Düsseldorf, Bonn und NRW
+              </h3>
+              <p className="font-body text-lg text-black mb-6">
+                Das Teigwerk liefert frische Brote, Burger Buns und Spezialitäten aus Köln an Cafés, Restaurants, Hotels & Caterer – zuverlässig, termintreu und in gleichbleibender Qualität.
+              </p>
               <p className="font-body text-xl md:text-2xl text-black leading-relaxed">
                 Wir bei Teigwerk kombinieren bewährte Handwerkstechniken mit modernen Ansätzen, um Backwaren zu schaffen, die Tradition und Innovation perfekt verbinden.
                 <br /><br />
