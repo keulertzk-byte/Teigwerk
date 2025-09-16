@@ -36,13 +36,13 @@ export default function Home() {
         aria-label="Hero"
         className="
           relative
-          overflow-visible
+          overflow-hidden
           pt-24 pb-20
           h-[90vh] flex items-center justify-center
         "
       >
         {/* Background slideshow */}
-        <div aria-hidden className="absolute inset-0 -z-10">
+        <div aria-hidden className="absolute inset-0 z-0">
           <HeroSlideshow />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>

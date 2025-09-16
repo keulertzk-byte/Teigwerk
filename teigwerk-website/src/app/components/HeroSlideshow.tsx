@@ -22,11 +22,12 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <div className="hero-bg-slideshow w-full h-full">
+    <div className="hero-bg-slideshow w-full h-full absolute inset-0">
       {backgrounds.map((bg, index) => (
         <div
           key={index}
           className={`hero-slide ${index === currentIndex ? 'active' : ''}`}
+          style={{ zIndex: index === currentIndex ? 1 : 0 }}
         >
           <Image
             src={bg.src}
