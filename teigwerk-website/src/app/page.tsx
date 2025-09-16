@@ -37,12 +37,17 @@ export default function Home() {
         className="
           relative
           pt-24 pb-20
-          bg-[#D1BA9C]/60
           flex items-center justify-center
+          overflow-hidden
         "
       >
+        {/* Background slideshow */}
+        <div aria-hidden className="absolute inset-0 z-0">
+          <HeroSlideshow />
+          <div className="absolute inset-0 bg-white/70"></div>
+        </div>
 
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 relative z-10">
           <div className="text-center text-black max-w-4xl mx-auto">
             <div className="mb-8">
               <Image
