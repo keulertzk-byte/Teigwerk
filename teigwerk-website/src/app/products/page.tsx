@@ -1,20 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: 'Sortiment',
-  description: 'Entdecken Sie unser komplettes Bäckerei-Sortiment für Gastronomie & Großhandel: Sauerteigbrote, Burger Buns, Bagels, Focaccia und süße Spezialitäten aus Köln.',
-  alternates: {
-    canonical: '/products',
-  },
-  openGraph: {
-    title: 'Sortiment | Das Teigwerk',
-    description: 'Entdecken Sie unser komplettes Bäckerei-Sortiment für Gastronomie & Großhandel: Sauerteigbrote, Burger Buns, Bagels, Focaccia und süße Spezialitäten aus Köln.',
-    url: 'https://www.das-teigwerk.de/products',
-  },
-};
 
 interface Product {
   id: number;
@@ -145,8 +133,6 @@ const products: Product[] = [
 ];
 
 const categories = ["Alle", "Brote & Klassiker", "Burger Buns", "Trendgebäcke", "Süßes & Besonderes"];
-
-"use client";
 
 function Products() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
