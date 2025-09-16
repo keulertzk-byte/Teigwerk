@@ -150,7 +150,7 @@ function Products() {
           <Link href="/" className="flex items-center">
             <Image
               src="/Logo.svg"
-              alt="Teigwerk Logo"
+              alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
               width={187}
               height={94}
               className="object-contain"
