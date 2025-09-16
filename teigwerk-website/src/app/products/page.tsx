@@ -1,8 +1,20 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sortiment',
+  description: 'Entdecken Sie unser komplettes Bäckerei-Sortiment für Gastronomie & Großhandel: Sauerteigbrote, Burger Buns, Bagels, Focaccia und süße Spezialitäten aus Köln.',
+  alternates: {
+    canonical: '/products',
+  },
+  openGraph: {
+    title: 'Sortiment | Das Teigwerk',
+    description: 'Entdecken Sie unser komplettes Bäckerei-Sortiment für Gastronomie & Großhandel: Sauerteigbrote, Burger Buns, Bagels, Focaccia und süße Spezialitäten aus Köln.',
+    url: 'https://www.das-teigwerk.de/products',
+  },
+};
 
 interface Product {
   id: number;
@@ -134,12 +146,14 @@ const products: Product[] = [
 
 const categories = ["Alle", "Brote & Klassiker", "Burger Buns", "Trendgebäcke", "Süßes & Besonderes"];
 
-export default function Products() {
+"use client";
+
+function Products() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>("Alle");
 
-  const filteredProducts = selectedCategory === "Alle" 
-    ? products 
+  const filteredProducts = selectedCategory === "Alle"
+    ? products
     : products.filter(product => product.category === selectedCategory);
 
   return (
@@ -379,7 +393,7 @@ export default function Products() {
       {/* Footer */}
       <footer className="bg-[#D1BA9C]/60 py-12 border-t border-gray-100">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <Link href="/" className="font-logo text-2xl text-black mb-4 block">
                 DAS TEIGWERK
@@ -400,6 +414,21 @@ export default function Products() {
                 <li className="font-body text-black">Köln HRB 88257</li>
               </ul>
             </div>
+            <div>
+              <h4 className="font-headline text-lg text-black mb-4">Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/impressum" className="font-body text-black hover:text-primary transition-colors">
+                    Impressum
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/datenschutz" className="font-body text-black hover:text-primary transition-colors">
+                    Datenschutz
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="border-t border-gray-200 mt-8 pt-8 text-center">
             <p className="font-body text-black">
@@ -411,3 +440,5 @@ export default function Products() {
     </div>
   );
 }
+
+export default Products;

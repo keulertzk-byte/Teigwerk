@@ -32,7 +32,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section aria-label="Hero" className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <HeroSlideshow />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="mb-8">
             <Image
               src="/Teigwerk Logo Weiss.png"
-              alt="Teigwerk Logo"
+              alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
               width={900}
               height={900}
               className="mx-auto mb-6"
@@ -53,16 +53,24 @@ export default function Home() {
             <br />
             den Unterschied macht
           </h1>
+          <h2 className="font-body text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+            Handwerkliche Backwaren für Gastronomie & Großhandel in Köln, Düsseldorf, Bonn und NRW
+          </h2>
+          <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+            Das Teigwerk liefert frische Brote, Burger Buns und Spezialitäten aus Köln an Cafés, Restaurants, Hotels & Caterer – zuverlässig, termintreu und in gleichbleibender Qualität.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="/products"
               className="font-cta bg-secondary hover:bg-primary text-white px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
+              aria-label="Entdecken Sie unser komplettes Sortiment"
             >
               Sortiment entdecken
             </Link>
-            <Link 
+            <Link
               href="#contact"
               className="font-cta border border-white/80 hover:bg-white hover:text-foreground text-white px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center"
+              aria-label="Kontaktieren Sie uns für eine Beratung"
             >
               Kontakt
             </Link>
@@ -74,13 +82,13 @@ export default function Home() {
       <div className="py-10 bg-[#D1BA9C]/60"></div>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-[#D1BA9C]/60">
+      <section id="about" aria-label="Über das Teigwerk" className="py-20 bg-[#D1BA9C]/60">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden">
               <Image
                 src="/Teigwerk Bakery.jpg"
-                alt="Teigwerk Bakery"
+                alt="Backstube von Das Teigwerk - Handwerkliche Brotproduktion in Köln"
                 fill
                 className="object-cover"
               />
@@ -100,14 +108,14 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-[#D1BA9C]/60">
+      <section aria-label="Sortiment" className="py-20 bg-[#D1BA9C]/60">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-headline text-4xl md:text-5xl text-black mb-4">
               Unser Sortiment
             </h2>
             <p className="font-body text-xl md:text-2xl text-black max-w-2xl mx-auto">
-              Vom klassischen Sauerteigbrot bis zum saftigen Bananenbrot. 
+              Vom klassischen Sauerteigbrot bis zum saftigen Bananenbrot.
               <br />
               <strong>Homemade. Honest. From Cologne.</strong>
             </p>
@@ -115,87 +123,98 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 category-container">
             {/* Brote & Klassiker */}
-            <Link href="/products?category=Brote%20%26%20Klassiker" className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
-              <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
-                <Image
-                  src="/Sauerteigbrot.jpeg"
-                  alt="Brote & Klassiker"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
-                Brote & Klassiker
-              </h3>
-              <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Traditionelle Brote und bewährte Klassiker aus der Backstube.
-              </p>
-            </Link>
+            <article className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
+              <Link href="/products?category=Brote%20%26%20Klassiker" aria-label="Brote & Klassiker - Traditionelle Sauerteigbrote ansehen">
+                <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
+                  <Image
+                    src="/Sauerteigbrot.jpeg"
+                    alt="Handwerkliches Sauerteigbrot von Das Teigwerk - Brote & Klassiker"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
+                  Brote & Klassiker
+                </h3>
+                <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Unsere Sauerteige & traditionellen Brote werden täglich frisch gebacken. Ideal für Restaurants, Hotels und Cafés, die Wert auf handwerkliche Qualität legen.
+                </p>
+              </Link>
+            </article>
 
             {/* Burgerbuns */}
-            <Link href="/products?category=Burger%20Buns" className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
-              <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
-                <Image
-                  src="/burger buns landingpage.png"
-                  alt="Burgerbuns"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
-                Burger Buns
-              </h3>
-              <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Perfekte Buns für Burger, Sandwiches und Street Food Kreationen.
-              </p>
-            </Link>
+            <article className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
+              <Link href="/products?category=Burger%20Buns" aria-label="Burger Buns - Professionelle Burger Brötchen für Gastronomie">
+                <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
+                  <Image
+                    src="/burger buns landingpage.png"
+                    alt="Burger Buns für Gastronomie von Das Teigwerk"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
+                  Burger Buns
+                </h3>
+                <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Locker, saftig und formstabil – perfekt für Burger-Restaurants, Street-Food und Catering-Dienstleister. In verschiedenen Größen erhältlich.
+                </p>
+              </Link>
+            </article>
 
             {/* Trendgebäcke */}
-            <Link href="/products?category=Trendgeb%C3%A4cke" className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
-              <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
-                <Image
-                  src="/Mohnbagel.png"
-                  alt="Trendgebäcke"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
-                Trendgebäcke
-              </h3>
-              <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Moderne Kreationen und innovative Backwaren im Trend der Zeit.
-              </p>
-            </Link>
+            <article className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
+              <Link href="/products?category=Trendgeb%C3%A4cke" aria-label="Trendgebäcke - Moderne Bagels und innovative Backwaren">
+                <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
+                  <Image
+                    src="/Mohnbagel.png"
+                    alt="Trendgebäck Spezialitäten - Bagels von Das Teigwerk"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
+                  Trendgebäcke
+                </h3>
+                <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Moderne Backwaren mit Twist: von gefüllten Croissants bis zu saisonalen Spezialitäten, die Aufmerksamkeit & Geschmack bringen.
+                </p>
+              </Link>
+            </article>
 
             {/* Süßes & Besonderes */}
-            <Link href="/products?category=S%C3%BC%C3%9Fes%20%26%20Besonderes" className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
-              <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
-                <Image
-                  src="/Bananenbrot.png"
-                  alt="Süßes & Besonderes"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
-                Süßes & Besonderes
-              </h3>
-              <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Süße Leckereien und besondere Spezialitäten für jeden Anlass.
-              </p>
-            </Link>
+            <article className="category-item group cursor-pointer transition-all duration-500 ease-in-out hover:flex-grow">
+              <Link href="/products?category=S%C3%BC%C3%9Fes%20%26%20Besonderes" aria-label="Süßes & Besonderes - Süße Backwaren für Cafés">
+                <div className="relative h-96 mb-6 overflow-hidden rounded-2xl">
+                  <Image
+                    src="/Bananenbrot.png"
+                    alt="Süßes Gebäck für Cafés - Bananenbrot von Das Teigwerk"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-headline text-2xl md:text-3xl text-black mb-2 text-center">
+                  Süßes & Besonderes
+                </h3>
+                <p className="font-body text-xl md:text-2xl text-black text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Süße Leckereien & Sonderanfertigungen – ideal für Dessertkarten, Events und Café-Spezialitäten. Auf Wunsch auch individuell.
+                </p>
+              </Link>
+            </article>
           </div>
         </div>
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 bg-white">
+      <section aria-label="Partner" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-headline text-4xl md:text-5xl text-black mb-8">
               Unsere Partner
             </h2>
+            <p className="font-body text-xl md:text-2xl text-black max-w-3xl mx-auto">
+              Wir beliefern Cafés & Restaurants in Köln, Düsseldorf, Bonn & Umgebung. Qualität, Termintreue & lokaler Service – darauf können Sie sich verlassen.
+            </p>
           </div>
           
           <div className="max-w-6xl mx-auto mb-20">
@@ -372,15 +391,15 @@ export default function Home() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="py-20 bg-foreground text-white">
+      <section id="contact" aria-label="Kontakt & Lieferung" className="py-20 bg-foreground text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-headline text-4xl md:text-5xl mb-6">
-                Kontaktieren Sie uns
+                Kontakt & Lieferung
               </h2>
               <p className="font-body text-xl mb-8">
-                Interesse an einer Partnerschaft oder Fragen zu unserem Sortiment? Wir freuen uns auf Ihre Nachricht.
+                Das Teigwerk liefert handwerkliche Backwaren an Gastronomie, Hotels & Cafés in Köln, Düsseldorf, Bonn & NRW. Kontaktieren Sie uns für Beratung, Preise & Musterlieferungen.
               </p>
             </div>
 
@@ -516,7 +535,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#D1BA9C]/60 py-12 border-t border-gray-100">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="font-logo text-2xl text-black mb-4">
                 DAS TEIGWERK
@@ -535,6 +554,21 @@ export default function Home() {
                 <li className="font-body text-black">Teigwerk GmbH</li>
                 <li className="font-body text-black">Geschäftsführer: Jan Haiar</li>
                 <li className="font-body text-black">Köln HRB 88257</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-headline text-lg text-black mb-4">Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/impressum" className="font-body text-black hover:text-primary transition-colors">
+                    Impressum
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/datenschutz" className="font-body text-black hover:text-primary transition-colors">
+                    Datenschutz
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

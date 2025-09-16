@@ -1,0 +1,83 @@
+# Teigwerk Website Plan
+
+Erstelle ein vollständiges Website-Konzept für eine deutsche B2B-Bäckerei namens Das Teigwerk, die Brot, Bagels, Cookie Dough, Ciabatta und weitere Backwaren an Restaurants, Cafés und Burgerläden liefert. Ziel ist eine moderne, verkaufsstarke, SEO-optimierte Website im Stil eines hochwertigen E-Commerce-Shops – jedoch ohne Warenkorb oder Online-Bezahlung.
+Stattdessen sollen Call-to-Actions (CTAs) zur Kontaktaufnahme oder Musterbestellung führen.
+
+Tonfall & Zielgruppe:
+
+Warm, professionell, selbstbewusst
+Direkt auf Gastronom:innen, Köch:innen, Café-Besitzer:innen zugeschnitten
+Betonung auf Nutzen, Qualität, Zuverlässigkeit
+Keine Endkunden-Floskeln, sondern B2B-Mehrwert
+Design & Animationen:
+Umsetzung in z. B. Framer Motion + Tailwind CSS oder ähnlichen Tools mit:
+Sanften Fade-in & Slide-up Animationen beim Scrollen (Staggered)
+Parallax-Scroll-Effekt im Hero-Bereich für Text und Bild
+Hover-Animationen (leichte Vergrößerung, Schatten, Farbwechsel)
+Bild-Zoom bei Hover auf Produktkarten und Galeriebildern
+Scroll-Progress-Bar oben
+Animierter Farbverlauf-Hintergrund im Hero
+Horizontales Logo-Marquee für Partner
+Sticky-Produktbilder auf Produktseiten
+Tabs/Akkordeons für Produktdetails
+Lightbox-Galerie für Kundenbilder
+Landing Page Struktur:
+Navigation & Progress-Bar
+Sticky Navigation, transparenter Hintergrund, der beim Scrollen fester wird
+Scroll-Progress-Bar oben
+Hero Section
+Headline: Backwaren, die Ihr Geschäft unvergesslich machen.
+Subheadline: Betonung auf handwerklicher Qualität, pünktlicher Lieferung und Menü-Aufwertung
+CTA-Button: „Jetzt Sortiment entdecken“ (Farbverlauf, Hover-Shift)
+Zweiter CTA: „Muster anfragen“ (Outline-Style)
+Parallax-Bild auf der rechten Seite
+Kleiner Badge: „B2B-Handwerk für Gastronomie“
+Animierter Farbverlauf im Hintergrund
+Partner-Logos
+Horizontales, endlos scrollendes Logo-Marquee
+USP-Section
+4 Kacheln mit Icon, Titel, Text
+Hover: leichte Anhebung und Schatten
+Themen: Handwerkliche Spitzenqualität, Konstante Lieferzuverlässigkeit, Menü-Innovation, Individuelle Lösungen
+Sortiment-Teaser
+Titel: „Alles für ein erfolgreiches Menü – aus einer Hand“
+Kurzer Einleitungstext
+3–4 Produktkarten (Bagels, Ciabatta, Cookie Dough, Brot) mit Hover-Zoom
+Klick führt zu jeweiliger Produktseite
+Anwendungsgalerie
+Titel: „Inspiration für Ihre Karte“
+3–6 Bilder mit Gericht-Beispielen
+Hover-Zoom, leichte Aufhellung
+FAQ
+Akkordeon mit Fragen: Bestellprozess, Mindestmenge, Haltbarkeit
+Kontakt-Section
+Headline: „Lust auf einen neuen Bestseller auf Ihrer Karte?“
+Kurztext
+Kontaktformular (Name, E-Mail, Nachricht)
+CTA: „Anfrage senden“
+Produktseite Struktur (Beispiel: Bagels):
+Hero-Bereich / Above the Fold
+Links: Großes Produktbild oder Slideshow (Sticky beim Scrollen)
+Rechts: Produktname, Untertitel, kurze Beschreibung
+CTA-Buttons: „Muster anfragen“ & „Kontakt aufnehmen“
+Produktdetails in Tabs/Akkordeons
+Beschreibung: Story, Geschmack, Textur
+Produktvorteile: Qualität, Haltbarkeit, Lieferform
+Einsatzideen: Gerichtsvorschläge, Pairings
+Technische Infos: Maße, Gewicht, Lieferform (frisch/tiefgekühlt)
+Bildgalerie
+Reihe 1: Professionelle Produktbilder
+Reihe 2: „Kunden im Einsatz“ (Bilder aus Restaurants/Cafés)
+Hover-Zoom, Lightbox beim Klick
+Kundenstimmen / Referenzen
+Kurze Testimonials mit Logo oder Name des Kunden
+Weitere Produkte
+Teaser-Kacheln mit Link zu anderen Produktseiten
+Kontakt-Section
+Einladungstext & CTA-Button: „Jetzt Anfrage stellen“
+Design-Richtlinien:
+Viel Weißraum, warme Farben (Weiß, Beige, Bernstein/Gold)
+Runde Ecken (2xl), sanfte Schatten
+Bilder großflächig und in hoher Qualität
+Microinteractions für Buttons und Bildwechsel
+Premium-E-Commerce-Feeling, angepasst für B2B"*
