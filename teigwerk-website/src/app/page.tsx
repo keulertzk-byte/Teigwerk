@@ -28,17 +28,17 @@ export default function Home() {
               alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
               width={187}
               height={94}
-              className="object-contain"
+              className="object-contain filter brightness-0 invert"
             />
           </div>
           <nav className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="font-body-medium text-lg text-black hover:text-primary transition-colors">
+            <Link href="/" className="font-body-medium text-lg text-white hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="/products" className="font-body-medium text-lg text-black hover:text-primary transition-colors">
+            <Link href="/products" className="font-body-medium text-lg text-white hover:text-primary transition-colors">
               Sortiment
             </Link>
-            <Link href="#contact" className="font-body-medium text-lg text-black hover:text-primary transition-colors">
+            <Link href="#contact" className="font-body-medium text-lg text-white hover:text-primary transition-colors">
               Kontakt
             </Link>
           </nav>
@@ -69,7 +69,7 @@ export default function Home() {
                 alt="Das Teigwerk - Handwerkliche Backwaren aus Köln"
                 width={900}
                 height={900}
-                className="mx-auto mb-6"
+                className="mx-auto mb-6 filter brightness-0 invert"
               />
             </div>
 
