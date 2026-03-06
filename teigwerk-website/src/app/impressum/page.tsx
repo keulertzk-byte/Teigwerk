@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Impressum & Datenschutz | Das Teigwerk',
-    description: 'Impressum und Datenschutzerklärung der Teigwerk GmbH - Rechtliche Informationen und Datenschutzhinweise.',
+    description: 'Impressum und Datenschutzerklärung der Haiar Brot GmbH - Rechtliche Informationen und Datenschutzhinweise.',
     url: 'https://www.das-teigwerk.de/impressum',
   },
   robots: {
@@ -61,7 +61,7 @@ export default function Impressum() {
 
             <section>
               <p className="mb-4">
-                <strong>Unternehmen:</strong> Teigwerk GmbH<br />
+                <strong>Unternehmen:</strong> Haiar Brot GmbH<br />
                 <strong>Vertreten durch:</strong> Geschäftsführer Jan Haiar<br />
                 <strong>Anschrift:</strong> Walter-Gropius-Straße 8, 50126 Bergheim, Deutschland<br />
                 <strong>E‑Mail:</strong> <a href="mailto:j.haiar@outlook.de" className="text-primary hover:underline">j.haiar@outlook.de</a><br />
@@ -120,7 +120,7 @@ export default function Impressum() {
 
               <h2 className="font-headline text-2xl text-black mb-4">1. Verantwortlicher</h2>
               <p className="mb-6">
-                <strong>Teigwerk GmbH</strong><br />
+                <strong>Haiar Brot GmbH</strong><br />
                 Walter-Gropius-Straße 8, 50126 Bergheim, Deutschland<br />
                 E‑Mail: <a href="mailto:j.haiar@outlook.de" className="text-primary hover:underline">j.haiar@outlook.de</a>
               </p>
