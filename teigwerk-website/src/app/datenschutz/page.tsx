@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
-  description: 'Datenschutzerklärung der Teigwerk GmbH - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.',
+  description: 'Datenschutzerklärung der Haiar Brot GmbH - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.',
   alternates: {
     canonical: '/datenschutz',
   },
