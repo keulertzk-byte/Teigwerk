@@ -81,7 +81,7 @@ export default function Datenschutz() {
               <section>
                 <h3 className="font-headline text-xl text-black mb-3">Verantwortlicher</h3>
                 <p className="mb-4">
-                  <strong>Teigwerk GmbH</strong><br />
+                  <strong>Haiar Brot GmbH</strong><br />
                   Walter-Gropius-Straße 8, 50126 Bergheim<br />
                   E-Mail: <a href="mailto:j.haiar@outlook.de" className="text-primary hover:underline">j.haiar@outlook.de</a>
                 </p>
@@ -124,7 +124,7 @@ export default function Datenschutz() {
             <div>
               <h4 className="font-headline text-lg text-black mb-4">Impressum</h4>
               <ul className="space-y-2">
-                <li className="font-body text-black">Teigwerk GmbH</li>
+                <li className="font-body text-black">Haiar Brot GmbH</li>
                 <li className="font-body text-black">Geschäftsführer: Jan Haiar</li>
                 <li className="font-body text-black">Köln HRB 88257</li>
               </ul>
