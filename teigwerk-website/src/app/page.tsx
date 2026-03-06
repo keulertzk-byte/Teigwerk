@@ -579,7 +579,7 @@ export default function Home() {
             <div>
               <h4 className="font-headline text-lg text-black mb-4">Impressum</h4>
               <ul className="space-y-2">
-                <li className="font-body text-black">Teigwerk GmbH</li>
+                <li className="font-body text-black">Haiar Brot GmbH</li>
                 <li className="font-body text-black">Geschäftsführer: Jan Haiar</li>
                 <li className="font-body text-black">Köln HRB 88257</li>
               </ul>
@@ -602,7 +602,7 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-200 mt-8 pt-8 text-center">
             <p className="font-body text-black">
-              © 2025 Teigwerk. All rights reserved.
+              © 2025 Haiar Brot GmbH. All rights reserved.
             </p>
           </div>
         </div>
