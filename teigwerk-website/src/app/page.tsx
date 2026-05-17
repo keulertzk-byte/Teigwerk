@@ -434,7 +434,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Information */}
               <div>
-                <h3 className="font-headline text-2xl mb-6">Teigwerk Kontakt</h3>
+                <h3 className="font-headline text-2xl mb-6">Kontakt</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -451,7 +451,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-body-medium text-white">E-Mail</p>
-                      <p className="font-body text-gray-300">j.haiar@outlook.de</p>
+                      <p className="font-body text-gray-300">info@das-teigwerk.de</p>
                     </div>
                   </div>
                 </div>
