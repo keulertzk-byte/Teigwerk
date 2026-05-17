@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Impressum & Datenschutz',
-  description: 'Impressum und Datenschutzerklärung der Teigwerk GmbH - Rechtliche Informationen und Datenschutzhinweise für www.das-teigwerk.de',
+  description: 'Impressum und Datenschutzerklärung der Haiar Brot GmbH - Rechtliche Informationen und Datenschutzhinweise für www.das-teigwerk.de',
   alternates: {
     canonical: '/impressum',
   },
@@ -64,7 +64,7 @@ export default function Impressum() {
                 <strong>Unternehmen:</strong> Haiar Brot GmbH<br />
                 <strong>Vertreten durch:</strong> Geschäftsführer Jan Haiar<br />
                 <strong>Anschrift:</strong> Walter-Gropius-Straße 8, 50126 Bergheim, Deutschland<br />
-                <strong>E‑Mail:</strong> <a href="mailto:j.haiar@outlook.de" className="text-primary hover:underline">j.haiar@outlook.de</a><br />
+                <strong>E‑Mail:</strong> <a href="mailto:info@das-teigwerk.de" className="text-primary hover:underline">info@das-teigwerk.de</a><br />
                 <strong>Website:</strong> <a href="https://www.das-teigwerk.de" className="text-primary hover:underline">https://www.das-teigwerk.de</a>
               </p>
 
@@ -122,7 +122,7 @@ export default function Impressum() {
               <p className="mb-6">
                 <strong>Haiar Brot GmbH</strong><br />
                 Walter-Gropius-Straße 8, 50126 Bergheim, Deutschland<br />
-                E‑Mail: <a href="mailto:j.haiar@outlook.de" className="text-primary hover:underline">j.haiar@outlook.de</a>
+                E‑Mail: <a href="mailto:info@das-teigwerk.de" className="text-primary hover:underline">info@das-teigwerk.de</a>
               </p>
 
               <h2 className="font-headline text-2xl text-black mb-4">2. Zwecke, Rechtsgrundlagen, Empfänger, Speicherdauer</h2>
